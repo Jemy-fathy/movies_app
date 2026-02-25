@@ -39,7 +39,7 @@ class _PostersBackground extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(15),
             image: const DecorationImage(
-              image: AssetImage('assets/Images/movie_poster.png'),
+              image: AssetImage('assets/Images/OnBoarding.png'),
               fit: BoxFit.cover,
             ),
           ),
