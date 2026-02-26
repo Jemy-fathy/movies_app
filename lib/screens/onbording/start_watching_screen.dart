@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies_app/router/page_route_names.dart';
 import '../../core/constants/app_colors.dart';
 
 class StartWatchingScreen extends StatelessWidget {
@@ -78,7 +79,7 @@ class _StartWatchingContent extends StatelessWidget {
               height: 55,
               child: ElevatedButton(
                 onPressed: () {
-                  debugPrint("Finished Onboarding");
+                  Navigator.pushReplacementNamed(context, PageRouteNames.login);
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: AppColors.primaryYellow,

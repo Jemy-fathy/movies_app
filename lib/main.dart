@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/core/constants/app_colors.dart';
-import 'package:movies_app/screens/splash_screen.dart'; // تأكد من مسار ملف السبلش عندك
+import 'package:movies_app/router/app_router.dart';
+import 'package:movies_app/router/page_route_names.dart';
 
 void main() {
   runApp(const MoviesApp());
@@ -22,8 +23,8 @@ class MoviesApp extends StatelessWidget {
         fontFamily: 'Inter', // لو عندك خط معين ضيفه هنا في الـ pubspec.yaml
       ),
 
-      // نقطة الانطلاق هي شاشة الـ Splash
-      home: const SplashScreen(),
+      initialRoute: PageRouteNames.splash,
+      onGenerateRoute: AppRouter.onGenerateRoute,
     );
   }
 }
